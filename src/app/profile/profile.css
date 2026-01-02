@@ -1,0 +1,38 @@
+.profile-columns {
+  display: flex;
+  grid-gap: 30px;
+  margin: 12px 0;
+  margin-left: 100px;
+  margin-right: 100px;
+  padding-left: 60px;
+  padding-right: 60px;
+}
+.profile-columns .col {
+  padding: 8px;
+}
+.profile-columns .col-left {
+  flex: 1 1 0;
+  padding: 0 80px 0 80px;
+}
+.profile-columns .col-right {
+  flex: 2 1 0;
+}
+
+.profile-image {
+    border-radius: 50% !important;
+    overflow: hidden; /* Ensure the image is clipped to the circle */
+    width: 100%; /* Adjust the width to make the circle smaller */
+    margin: 0 auto; /* Center horizontally */
+    display: block; /* Required for margin auto to work */
+    height: auto; /* Maintain aspect ratio */
+}
+.profile-image img {
+    width: 100%; /* Make the image responsive */
+    height: auto; /* Maintain aspect ratio */
+}
+
+@media (max-width: 720px) {
+  .profile-columns {
+    flex-direction: column;
+  }
+}
